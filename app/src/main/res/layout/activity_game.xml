@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <GridView
+        android:id="@+id/simpleGridView"
+        android:layout_width="match_parent"
+        android:layout_height="422dp"
+        android:footerDividersEnabled="false"
+
+        android:numColumns="8"
+
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/theTurn"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/simpleGridView"
+        android:layout_centerHorizontal="true"
+        android:text="              ITS PLAYER #1 TURN!!!"
+        android:textColor="#909"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/sc1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/theTurn"
+        android:text="PLAYER #1 SCORE:"
+        android:textColor="#009"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="77dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sc1"
+        android:layout_marginTop="17dp"
+        android:text="      0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#009" />
+
+    <TextView
+        android:id="@+id/sc2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/theTurn"
+        android:layout_marginLeft="207dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/sc1"
+        android:text="PLAYER #2 SCORE:"
+        android:textColor="#900"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="77dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sc2"
+        android:layout_marginLeft="241dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/score1"
+        android:text="      0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#900" />
+
+
+</RelativeLayout>
